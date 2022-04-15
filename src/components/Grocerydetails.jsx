@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../data.json";
-// import CartButton from './components/CartButton'
+import CartButton from './components/CartButton'
 // import CartButton from "./CartButton"
 
 const GroceryDetails = () => {
@@ -8,6 +8,7 @@ const GroceryDetails = () => {
 
   return (
     <>
+    
       <h1>Groceries</h1>
       <div className="container">
         {/* map through the data and display the cards */}
@@ -22,7 +23,7 @@ const GroceryDetails = () => {
                 <p>{GroceryDetail.sellingPrice}</p>
                 <p>M.R.P ₹</p>
                 <s>{GroceryDetail.mrp}</s>
-                <button >Add to cart</button>
+                <button onClick="">Add to cart</button>
               </div>
               {/* <CartButton/> */}
             </>
@@ -33,3 +34,4 @@ const GroceryDetails = () => {
   );
 };
 export default GroceryDetails;
+
